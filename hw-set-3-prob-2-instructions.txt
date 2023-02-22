@@ -1,0 +1,27 @@
+Problem 2 (network modeling + computation).
+
+The standard brown sauce that is used in all meals in dining halls of participating University of California campuses (UCD, UCB, UCLA, UCSD) is produced by two central production plants, located in Alameda (A) and Bakersfield (B). Plant A can produce up to 700 barrels of sauce each day and Plant B can produce up to 1200 barrels. (A “barrel” is the standard unit of volume that is used on the international wholesale sauce market.) Because of university requirements regarding the high availability of sauce, there is a redundant interconnection network of culinary pipelines: The sauce can be  pumped through pipelines from each of the two plants to each of three tank farms, one at Concord (C), one at Dos Palos (D), and one at Exeter (E). From the tank farms, the sauce is trucked to the campus locations. Each of the pipelines can transport up to 811 barrels of sauce each day at a cost (charged by the independently operated sauce network operator) of $0.70 per mile and barrel. Trucking the sauce incurs a cost of $0.85 per mile and barrel. In response to the projected daily demand for brown sauce on each campus, the University of California, Office of the President, wishes to find a minimum-cost distribution (“sauce routing”) plan. (The cost for the production of the sauce is paid for separately and is not part of this problem.)
+
+a. Draw the network and introduce notation for the underlying directed graph.
+
+b. Write an LP model for finding a minimum-cost sauce routing plan. Define parameters for all given data instead of using given numerical data directly. If you need any parameters whose numerical values are not given in the problem text, define them as well.
+
+c. Rewrite the constraints of the problem in the form Mx = b, 0 <= x <= u, by determining a suitable matrix M.
+
+d. I have received the following guidance from the University of California, Office of the President, regarding the lengths of the culinary pipelines in the redundant interconnection network:
+
+            Dear Professor Koeppe,
+
+            Unfortunately, we cannot provide you with the precise lengths of the culinary pipelines in the University of California brown sauce distribution network, nor the precise routes that our sauce trucks take. The US Department of Homeland Security has classified this information as a Top Balloon Secret. We hope for your understanding and suggest that you use the distances indicated by Google Maps as an approximation.
+
+            Cordially,
+
+            C. Arbonara, Division Chief
+
+            UC Office of the President, Sauce Division
+
+Obtain distance data as suggested by UCOP.
+
+e. As usual, let the parameter s0 be the last digit of your SIS ID number and the parameter s1 be the next-to-last digit. By a strange coincidence, the projected demand on the UCD, UCB, UCLA, UCSD campuses is equal to 4*(25+10*s1+s0), 6*(25+10*s1+s0), 3*(25+10*s1+s0), and 2*(25+10*s1+s0), respectively.
+
+f. Model and solve the problem using AMPL or CVXpy, writing the model and data in separate files. (There should be no numerical values appearing in the model file / Python module.)

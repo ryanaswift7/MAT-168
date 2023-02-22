@@ -1,0 +1,54 @@
+Problem 1:
+
+Alice O. Hare works in an investment company on Wall Street. She is considering investing in four bounds, and $1 million dollar is available for the investment. The expected annual return, the worst-case annual return on each bond, and the “duration” of each bond are given in Table 1. The duration of a bond is a measure of the bond’s sensitivity to interest rates. Alice wants to maximize the expected return subject to the following three constraints.
+
+    Constraint 1: The worst-case return of the bond portfolio must be at least 8%.
+    Constraint 2: The average duration of the portfolio must be at most 6. For example, a portfolio that invested $600,000 in bond 1 and $400,000 in bond 4 have an average duration of (600,000*3+400,000*9)/1,000,000 = 5.4.
+    Constraint 3: Because of diversification requirements, at most 42% of the total amount invested can be invested in a single bond.
+
+ 
+
+                 Table 1
+
+bond 	Expected return (%) 	Worst-case return (%) 	Duration
+
+1 				13 						6 					3
+
+2 				7 						7 					4
+
+3 				12 						10 					7
+
+4 				14 						9 					9
+
+Model and solve it using AMPL or CVXpy. Show relevant input/output.
+
+ 
+
+Problem 2
+
+A small bioengineering consulting firm in Davis has 3 senior Rabbit Technology designers available to work on 4 current projects over the next 2 weeks. Each designer has 80 hours to split among the projects, and the following table shows the manager’s scoring (0=nil to 100=perfect) of the capability of each Rabbit Technology designer to contribute to each project, along with the estimate of the hours that each project will require.
+
+ 
+
+ 
+	
+
+				1 		2 		3 		4
+		
+		A 		90 		80 		10 		50
+		
+		B 		60 		70 		50 		65
+		
+		C 		70 		40 		75 		85
+
+Required 		70		50 		85 		35
+
+ 
+
+Formulate a linear optimization model to choose a work assignment that maximizes the total capability score.
+
+(a) First write down the model constraint by constraint, using the given data.
+
+(b) Then generalize the problem, introducing index sets for the designers and jobs, introducing general (algebraic) notation for the given parameters and the decision variables.
+
+(c) Model and solve it using AMPL or CVXpy. Show relevant input/output.
